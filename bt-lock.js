@@ -2,15 +2,15 @@
  * NAME:        bt-lock.js                                                  *
  * DESCRIPTION: Bluetooth JavaScript Library for Kerong Bluetooth Locks     *
  *		like the KR-T153-BT.					    *
- * AUTHOR:      Roel Broersma (roel@gigaweb.nl)								              *
+ * AUTHOR:      Roel Broersma (roel@gigaweb.nl)				    *
  * GITHUB:      https://github.com/roelbroersma/kerong_BT_lock              *
- * LICENSE:     MIT License													                        *
+ * LICENSE:     MIT License						    *
  ****************************************************************************/
  
  
  /***************************************************************************
- * BASE CONFIGURATION														                            *
- * This should be the same for every lock									                  *
+ * BASE CONFIGURATION							    *
+ * This should be the same for every lock				    *
  ****************************************************************************/
  export const BASE_CONFIG = {
   NAME_PREFIX:			  'SN:',
@@ -21,23 +21,23 @@
 
 
 /***************************************************************************
- * STATE & VARIABLES                                                        *
+ * STATE & VARIABLES                                                       *
  ***************************************************************************/
-let btDebug							          = true;
-let CONFIG							          = {};
+let btDebug			  = true;
+let CONFIG			  = {};
 let bluetoothDevice;
 let writeCharacteristic;
 let notifyCharacteristic;
 let randomCode;
-let userDataBuffer					      = [];
-let isAuthenticated					      = false;
-let pendingBatteryResolve			    = null;
+let userDataBuffer		  = [];
+let isAuthenticated		  = false;
+let pendingBatteryResolve	  = null;
 const pendingCreateUserPassword   = new Map();
-const latestPasswords				      = {};
+const latestPasswords		  = {};
 
 
 /****************************************************************************
- * BLUETOOTH LOGIC / MAIN FUNCTIONS											                    *
+ * BLUETOOTH LOGIC / MAIN FUNCTIONS					    *
  ****************************************************************************/
 
 /* FUNCTION TO GET THE DEVICE_NAME AFTER INITIAL CONNECT */
@@ -62,7 +62,7 @@ export async function connectToDevice() {
 
 /* Function which sends the initial 4-code pairing				      *
  * packet (see backside of the lock) and the Admin				      *
- * phone number and password. It then listens to notifications. */
+ * phone number and password. It then listens to notifications.			      */
 export async function pairAndAuthenticate() {
   if (!CONFIG.PAIRING_PASSWORD) {
     throw new Error('CONFIG.PAIRING_PASSWORD is missing or empty!');
