@@ -17,7 +17,7 @@ There are other locks, but they all charge a FEE (monthy or per code) to create 
 - Kitlock KL1000G3 met Netcode (asks 0.20EUR to create a code from their Cloud portal)
 - Digilock Versa (which ask a minimal fee of EUR 125,- a month which is for 100 locks)
 
-- 
+
 ## Features
 - **Pairing & Authentication**  
   Secure connection setup with factory pairing codes and admin credentials
