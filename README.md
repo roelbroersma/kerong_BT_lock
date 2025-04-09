@@ -2,6 +2,14 @@
 A JavaScript library to interact with Kerong Bluetooth Locks (e.g., KR-T153-BT) directly from modern web browsers. Program user codes, check battery levels, manage access logs, and control locks using the Web Bluetooth API. Ideal for smart locker systems, rental platforms, or IoT access control.
 This library -tries- to implement the official Kerong Bluetooth Communication Protocol v3.1 (see PDF documentation).
 
+**Features**
+- Pair with locks using factory/admin credentials
+- Create/delete temporary or permanent user codes
+- Retrieve battery status and lock metadata
+- Full compliance with Kerong's Bluetooth Communication Protocol
+- Supports Web Bluetooth (Chrome/Edge for desktop & Android) or using Bluefy (browser with Bluetooth support on IOS/iPhone)
+
+
 ## Why I made this
 The Kerong Locks are really good quality (IP68 and stainless steel!) for a very cheap price. The API/Documentation is publicly available.
 There are other locks, but they all charge a FEE (monthy or per code) to create codes!
@@ -9,16 +17,8 @@ There are other locks, but they all charge a FEE (monthy or per code) to create 
 - Kitlock KL1000G3 met Netcode (asks 0.20EUR to create a code from their Cloud portal)
 - Digilock Versa (which ask a minimal fee of EUR 125,- a month which is for 100 locks)
 
-
+- 
 ## Features
-- Pair with locks using factory/admin credentials
-- Create/delete temporary or permanent user codes
-- Retrieve battery status and lock metadata
-- Full compliance with Kerong's Bluetooth Communication Protocol
-- Supports Web Bluetooth (Chrome/Edge for desktop & Android) or using Bluefy (browser with Bluetooth support on IOS/iPhone)
-
-## Features
-
 - **Pairing & Authentication**  
   Secure connection setup with factory pairing codes and admin credentials
 - **User Management**  
