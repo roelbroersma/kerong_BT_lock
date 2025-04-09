@@ -1,22 +1,22 @@
 /****************************************************************************
  * NAME:        bt-lock.js                                                  *
  * DESCRIPTION: Bluetooth JavaScript Library for Kerong Bluetooth Locks     *
- *		like the KR-T153-BT.					    *
- * AUTHOR:      Roel Broersma (roel@gigaweb.nl)				    *
+ *		like the KR-T153-BT.					    																		*
+ * AUTHOR:      Roel Broersma (roel@gigaweb.nl)				    									*
  * GITHUB:      https://github.com/roelbroersma/kerong_BT_lock              *
- * LICENSE:     MIT License						    *
+ * LICENSE:     MIT License						    																	*
  ****************************************************************************/
  
  
  /***************************************************************************
- * BASE CONFIGURATION							    *
- * This should be the same for every lock				    *
+ * BASE CONFIGURATION							    																			*
+ * This should be the same for every lock				   													*
  ****************************************************************************/
  export const BASE_CONFIG = {
-  NAME_PREFIX:			  'SN:',
-  SERVICE_UUID:			  '0000fff0-0000-1000-8000-00805f9b34fb',
-  WRITE_CHAR_UUID:		'0000fff2-0000-1000-8000-00805f9b34fb',
-  NOTIFY_CHAR_UUID:		'0000fff1-0000-1000-8000-00805f9b34fb'
+  NAME_PREFIX:			'SN:',
+  SERVICE_UUID:			'0000fff0-0000-1000-8000-00805f9b34fb',
+  WRITE_CHAR_UUID:	'0000fff2-0000-1000-8000-00805f9b34fb',
+  NOTIFY_CHAR_UUID:	'0000fff1-0000-1000-8000-00805f9b34fb'
 };
 
 
@@ -37,7 +37,7 @@ const latestPasswords		  = {};
 
 
 /****************************************************************************
- * BLUETOOTH LOGIC / MAIN FUNCTIONS					    *
+ * BLUETOOTH LOGIC / MAIN FUNCTIONS					    														*
  ****************************************************************************/
 
 /* FUNCTION TO GET THE DEVICE_NAME AFTER INITIAL CONNECT */
@@ -70,8 +70,8 @@ export async function pairAndAuthenticate() {
   const pairingData = Array.from(CONFIG.PAIRING_PASSWORD, c => c.charCodeAt(0));
   const pairingPacket = createPacket(0x0F, pairingData);
 
-  if (btDebug)
-	console.log('Sending pairing-packet:', Array.from(pairingPacket).map(b => b.toString(16)));
+	if (btDebug)
+		console.log('Sending pairing-packet:', Array.from(pairingPacket).map(b => b.toString(16)));
 
   await writeWithRetry(pairingPacket);
 }
