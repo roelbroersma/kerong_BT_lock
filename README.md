@@ -159,20 +159,6 @@ async function handleLogout() {
 |getLogs()|Retrieves unlock history|
 
 
-## ToDo
-Rewriting / cleaning the code. Especially the handling of notifications and waiting for it.. making it more robust.
-Please help me, contribute! :)
-
-## Contributing
-PRs welcome! Ensure compliance with Kerong's protocol documentation.
-
-## License
-MIT © Roel Broersma
-
-## Disclaimer
-Not affiliated with Kerong Industry Co. Use at your own risk.
-
-
 ## Kerong KR-T-153 Technical information
 |Feature|Details|
 |-------|-------|
@@ -197,10 +183,23 @@ Not affiliated with Kerong Industry Co. Use at your own risk.
 ![image](https://github.com/user-attachments/assets/3d47fb11-d6ee-411a-9310-dc190d87270a)
 See the USB-C port above behind the cap. When the batteries are empty and you need to unlock the lock, hang on a USB-C powerbank and you can at least connect with Bluetooth again or use one of your codes.
 
-
 ## Official APPs
 - IOS (iPhone/iPad) Admin App: https://apps.apple.com/us/app/kerong-cabinet-lock-admin/id1475870199
 - IOS (iPhone/IPad) Client App (no Admin functions): https://apps.apple.com/us/app/kerong-smart-cabinet-lock/id1475870366
 - Android Admin App: https://play.google.com/store/apps/details?id=com.feexon.intelligentlockadmin&hl=en&pli=1
 - Android Client App: https://play.google.com/store/apps/details?id=com.feexon.intelligentlockuser&hl=en
-- 
+
+ 
+## ToDo
+Rewriting / cleaning the code. Especially the handling of notifications and waiting for it.. making it more robust.
+Please help me, contribute! :)
+
+## Contributing
+PRs welcome! Ensure compliance with Kerong's protocol documentation.
+
+## License
+MIT © Roel Broersma
+
+## Disclaimer
+Not affiliated with Kerong Industry Co. Use at your own risk.
+
