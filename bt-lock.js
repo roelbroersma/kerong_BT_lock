@@ -1,7 +1,7 @@
 /****************************************************************************
  * NAME:        bt-lock.js                                                  *
  * DESCRIPTION: Bluetooth JavaScript Library for Kerong Bluetooth Locks     *
- *				      like the KR-T153-BT.										                    *
+ *		like the KR-T153-BT.					    *
  * AUTHOR:      Roel Broersma (roel@gigaweb.nl)								              *
  * GITHUB:      https://github.com/roelbroersma/kerong_BT_lock              *
  * LICENSE:     MIT License													                        *
