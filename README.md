@@ -1,9 +1,16 @@
 # Kerong Bluetooth Lock JavaScript Library
-
 A JavaScript library to interact with Kerong Bluetooth Locks (e.g., KR-T153-BT) directly from modern web browsers. Program user codes, check battery levels, manage access logs, and control locks using the Web Bluetooth API. Ideal for smart locker systems, rental platforms, or IoT access control.
 This library -tries- to implement the official Kerong Bluetooth Communication Protocol v3.1 (see PDF documentation).
 
-**Features**:
+## Why I made this
+The Kerong Locks are really good quality (IP68 and stainless steel!) for a very cheap price. The API/Documentation is publicly available.
+There are other locks, but they all charge a FEE (monthy or per code) to create codes!
+- Eurolocks 3781 and 3961 (which charge you for a montly fee to use 'RAS' (Remote Allocation System) which has a crazy price!)
+- Kitlock KL1000G3 met Netcode (asks 0.20EUR to create a code from their Cloud portal)
+- Digilock Versa (which ask a minimal fee of EUR 125,- a month which is for 100 locks)
+
+
+## Features
 - Pair with locks using factory/admin credentials
 - Create/delete temporary or permanent user codes
 - Retrieve battery status and lock metadata
@@ -188,4 +195,12 @@ Not affiliated with Kerong Industry Co. Use at your own risk.
 
 ![image](https://github.com/user-attachments/assets/f275ea35-9c2d-484e-82a5-58a0e2e7aedf)
 ![image](https://github.com/user-attachments/assets/3d47fb11-d6ee-411a-9310-dc190d87270a)
+See the USB-C port above behind the cap. When the batteries are empty and you need to unlock the lock, hang on a USB-C powerbank and you can at least connect with Bluetooth again or use one of your codes.
 
+
+## Official APPs
+- IOS (iPhone/iPad) Admin App: https://apps.apple.com/us/app/kerong-cabinet-lock-admin/id1475870199
+- IOS (iPhone/IPad) Client App (no Admin functions): https://apps.apple.com/us/app/kerong-smart-cabinet-lock/id1475870366
+- Android Admin App: https://play.google.com/store/apps/details?id=com.feexon.intelligentlockadmin&hl=en&pli=1
+- Android Client App: https://play.google.com/store/apps/details?id=com.feexon.intelligentlockuser&hl=en
+- 
