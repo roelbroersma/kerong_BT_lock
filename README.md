@@ -138,7 +138,7 @@ async function handleLogout() {
 - Opera 43+
 - BlueFly (Bluetooth enabled browser for IOS/iPhone/iPad)
 
-## Other Requirements:
+## Other Requirements
 - HTTPS connection (required for Web Bluetooth), so host your code/website on https.
 - User gesture initiation (e.g., button click)
 
